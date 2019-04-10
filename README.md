@@ -9,7 +9,7 @@ This command-line tool converts the list of IP addresses in CIDR format to a lis
 Print the list of IPs for the given addresses in CIDR format:
 
 ```
-$ cidrls --clean 192.168.11.0/30 127.0.0.1/32
+$ go run main.go --clean 192.168.11.0/30 127.0.0.1/32
 192.168.11.1
 192.168.11.2
 127.0.0.1
