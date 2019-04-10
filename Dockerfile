@@ -4,7 +4,7 @@ FROM golang:1.12 AS builder
 RUN mkdir /app
 ADD . /app/
 WORKDIR /app
-RUN go build -race -ldflags "-extldflags '-static'" -o main .
+RUN env GOOS=linux GOARCH=386 go build -ldflags "-extldflags '-static'" -o main .
 
 CMD ["/app/main"]
 

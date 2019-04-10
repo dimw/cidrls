@@ -14,3 +14,12 @@ $ go run main.go --clean 192.168.11.0/30 127.0.0.1/32
 192.168.11.2
 127.0.0.1
 ```
+
+To run the tool with Docker use the following command:
+
+```
+$ docker run --rm dimw/cidrls --clean 192.168.11.0/30 127.0.0.1/32
+192.168.11.1
+192.168.11.2
+127.0.0.1
+``` 
